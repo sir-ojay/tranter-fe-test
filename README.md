@@ -1,4 +1,4 @@
-##BigDaTa
+#BigDaTa
 
 This is a long-running IOT & Analytics organization that wants to drive digitization of operations in remote areas using Internet of things (IOT).
 The Internet of things(IOT) describes how physical devices that are embedded with sensors,
