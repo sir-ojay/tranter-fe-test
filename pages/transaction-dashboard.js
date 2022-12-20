@@ -18,7 +18,7 @@ const dashboard = () => {
       ) : currentScreen == 2 ? (
         <Payment setCurrenScreen={setCurrenScreen} />
       ) : currentScreen == 3 ? (
-        <Completed setCurrenScreen={setCurrenScreen} />
+        <Completed />
       ) : (
         <Order />
       )}

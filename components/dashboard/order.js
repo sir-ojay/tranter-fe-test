@@ -10,7 +10,7 @@ const order = ({ setCurrenScreen }) => {
   return (
     <>
       {" "}
-      <div class="flex justify-center">
+      <div class="flex justify-center ">
         <Image src={image.order} w-screen height={48} alt="logo" />
       </div>
       <div class=" sm:mx-auto sm:w-full sm:max-w-md my-5">
@@ -99,7 +99,7 @@ const order = ({ setCurrenScreen }) => {
               </div>
               <button
                 type="submit"
-                class="w-full flex bg-[#054C73] justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                class="w-full flex bg-[#054C73] justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Continue to Payment Information
               </button>

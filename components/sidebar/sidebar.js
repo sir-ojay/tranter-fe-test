@@ -8,7 +8,7 @@ import Link from "next/link";
 const sidebar = () => {
   return (
     <>
-      <ul className="w-80 pt-10 px-10 text-xs pb-12 font-[Inter] sm:mx-auto  sm:max-w-md">
+      <ul className="w-80 pt-10 px-10 text-xs pb-12 font-[Inter]    min-[350px]:max-[650px]:hidden">
         <Link href={"/transaction-dashboard"} className="no-underline">
           <li className="list-none hover:bg-[#DFE9F4] flex mt-3 h-11 rounded-lg ">
             <Image

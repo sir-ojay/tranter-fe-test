@@ -6,11 +6,11 @@ import image from "../../assets/iot";
 
 const header = () => {
   return (
-    <div className="flex justify-between py-5 pl-24 pr-28 border-solid border-b font-[Inter]">
-      <div>
+    <div className="flex justify-between py-5 pl-24 pr-28 border-solid border-b font-[Inter] min-[350px]:max-[650px]:pl-5 min-[350px]:max-[650px]:w-full min-[350px]:max-[650px]:pr-5">
+      <div className=" min-[350px]:max-[650px]:w-20 :mt-2">
         <Image src={image.logo} width={154.37} height={48} alt="logo" />
       </div>
-      <ul className="flex justify-between w-2/5 pt-2 text-sm">
+      <ul className="flex justify-between w-2/5 pt-2 text-sm min-[350px]:max-[650px]:w-3/5 min-[350px]:max-[650px]:text-xs">
         <Link href={"/transaction-dashboard"} className="no-underline">
           <li>Buy Meter</li>
         </Link>
@@ -18,13 +18,13 @@ const header = () => {
           <li>Transaction History</li>
         </Link>
         <Link href={"/transaction-history"} className="no-underline">
-          <li>Contact</li>
+          <li className="min-[350px]:max-[650px]:hidden">Contact</li>
         </Link>
         <Link
           href={"/transaction-history"}
           className="no-underline border-solid border-r"
         >
-          <li className="mr-3">FAQ</li>
+          <li className="mr-5 min-[350px]:max-[650px]:hidden">FAQ</li>
         </Link>
 
         <li>

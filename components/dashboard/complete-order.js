@@ -1,12 +1,17 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import image from "../../assets/completed";
 
-const completed = ({ setCurrenScreen }) => {
-   const submitForm = () => {
-     // move to the next screen
-     setCurrenScreen(4);
-   };
+const completed = () => {
+  // move to the next screen
+  const router = useRouter();
+  const subminHandle = (e) => {
+    e.preventDefault();
+
+    router.push("./transaction-history");
+  };
+
   return (
     <>
       <div className="flex justify-center">
@@ -16,7 +21,7 @@ const completed = ({ setCurrenScreen }) => {
         <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
           <h5 className="text-base font-semibold">Transaction Summary</h5>
           <div>
-            <form className="mb-0 space-y-6">
+            <form onSubmit={subminHandle} className="mb-0 space-y-6">
               <div>
                 <p className="text-base font-medium text-center text-blue-800 mt-1">
                   You’ve Purchased Water!
@@ -65,7 +70,7 @@ const completed = ({ setCurrenScreen }) => {
               </div>
               <button
                 type="submit"
-                className="w-full flex bg-[#054C73] justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="w-full flex bg-[#054C73] justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Return Home
               </button>
@@ -77,4 +82,4 @@ const completed = ({ setCurrenScreen }) => {
   );
 };
 
-export default completed
+export default completed;
