@@ -5,11 +5,12 @@ import Transactions from '../components/transactions/transactions'
 
 const transactionHistory = () => {
   return (
-    <div className="px-5 py-2 mt-20">
+    <div className="h-screen">
       <Header />
-      <Sidebar/>
-      <Transactions/>
-    
+      <div className="flex">
+        <Sidebar />
+        <Transactions className="w-4/5 h-50" />
+      </div>
     </div>
   );
 }

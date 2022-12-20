@@ -1,16 +1,19 @@
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
-// import image from "../../assets/dropdown";
+import img from "../../assets/dropdown";
 import image from "../../assets";
 
 const header = () => {
   return (
-    <div className="flex space-y-96">
+    <div
+      className="flex justify-between py-5 pl-24 pr-28 border-solid border-b"
+     
+    >
       <div>
         <Image src={image.logo} width={154.37} height={48} alt="logo" />
       </div>
-      <ul>
+      <ul className="flex justify-between w-2/5 pt-2 text-sm">
         <Link href={"#"} className="no-underline">
           <li>Buy Meter</li>
         </Link>
@@ -20,13 +23,18 @@ const header = () => {
         <Link href={"#"} className="no-underline">
           <li>Contact</li>
         </Link>
-        <Link href={"#"} className="no-underline ">
-          <li>FAQ</li>
+        <Link href={"#"} className="no-underline border-solid border-r">
+          <li className="mr-3">FAQ</li>
         </Link>
 
-
         <li>
-          <Image src={image.arrow} width={4.37} height={2} alt="dropdown" />
+          <Image
+            src={img.arrow}
+            width={10}
+            height={5}
+            alt="dropdown"
+            className="mt-2"
+          />
         </li>
       </ul>
     </div>

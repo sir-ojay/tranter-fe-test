@@ -1,43 +1,51 @@
 import React from 'react';
-import image from "../../assets";
+import avatar from "../../assets/avatar";
+import key from "../../assets/key";
+import list from "../../assets/list";
 import Image from "next/image";
 const sidebar = () => {
   return (
     <>
-      <ul className="w-80 pt-14 px-10">
-        <li className="mb-2.5">
-          <Image src={image.avatar} width={14.37} height={4} alt="logo" />
-          <span>Quick Purchase</span>
+      <ul className="w-80 pt-10 px-10 text-xs ">
+        <li className="list-none hover:bg-slate-300 flex mt-3 h-11 rounded-lg ">
+          <Image
+            src={avatar.avatar}
+            width={13.33}
+            height={17.5}
+            alt="logo"
+            className="mr-2 ml-4"
+          />{" "}
+          <span className="pt-3">Quick Purchase</span>
         </li>
 
-        <li className="list-none hover:text-slate-400">
-          <Image src={image.key} width={10} height={5} alt="logo" />
-          <span>Transactions</span>
+        <li className="list-none hover:bg-slate-300 flex mt-3 h-11 rounded-lg">
+          <Image src={key.key} alt="logo" className="mr-2 ml-4" />
+          <span className="pt-3.5">Transactions</span>
         </li>
 
-        <li className="list-none">
-          <Image src={image.list} width={10} height={5} alt="logo" />
-          <span>Contact Us</span>
+        <li className="list-none hover:bg-slate-300 flex mt-3 h-11 rounded-lg">
+          <Image src={list.list} alt="logo" className="mr-2 ml-4" />
+          <span className="pt-3.5">Contact Us</span>
         </li>
-        <li className="list-none">
-          <Image src={image.list} width={10} height={5} alt="logo" />
-          <span>My Meters</span>
+        <li className="list-none hover:bg-slate-300 flex mt-3 h-11 rounded-lg">
+          <Image src={list.list} alt="logo" className="mr-2 ml-4" />
+          <span className="pt-3.5">My Meters</span>
         </li>
-        <li className="list-none">
-          <Image src={image.list} width={10} height={5} alt="logo" />
-          <span>Virtual Accounts</span>
+        <li className="list-none hover:bg-slate-300 flex mt-3 h-11 rounded-lg">
+          <Image src={list.list} alt="logo" className="mr-2 ml-4" />
+          <span className="pt-3.5">Virtual Accounts</span>
         </li>
-        <li className="list-none">
-          <Image src={image.list} width={10} height={5} alt="logo" />
-          <span>My Cards</span>
+        <li className="list-none hover:bg-slate-300 flex mt-3 h-11 rounded-lg">
+          <Image src={list.list} alt="logo" className="mr-2 ml-4" />
+          <span className="pt-3.5">My Cards</span>
         </li>
-        <li className="list-none">
-          <Image src={image.list} width={10} height={5} alt="logo" />
-          <span>Request Utility Bill</span>
+        <li className="list-none hover:bg-slate-300 flex mt-3 h-11 rounded-lg">
+          <Image src={list.list} alt="logo" className="mr-2 ml-4" />
+          <span className="pt-3.5">Request Utility Bill</span>
         </li>
-        <li className="list-none">
-          <Image src={image.list} width={10} height={5} alt="logo" />
-          <span>View Profile</span>
+        <li className="list-none  flex mt-3 hover:bg-slate-300 h-11 rounded-lg ">
+          <Image src={list.list} alt="logo" className="mr-2 ml-4" />
+          <span className="pt-3.5">View Profile</span>
         </li>
       </ul>
     </>
